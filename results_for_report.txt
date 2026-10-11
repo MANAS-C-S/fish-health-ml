@@ -1,0 +1,76 @@
+FISH HEALTH FINDING CLASSIFICATION — ACTUAL RUN RESULTS
+Rows used: 6843
+Target: ETIOLOGICAL DESCRIPTION
+Features: SPECIES NAME, LIFE STAGE DESCRIPTION, LOCATION NAME, case_year, case_month
+Classes: 56
+Random Forest accuracy: 0.2320
+Baseline accuracy: 0.2016
+Macro precision: 0.1039
+Macro recall: 0.1695
+Macro F1: 0.1141
+Weighted F1: 0.2515
+
+                                   precision    recall  f1-score   support
+
+            AEROMONAS SALMONICIDA       0.41      0.25      0.31       150
+                    AEROMONAS SP.       0.00      0.00      0.00         4
+                         ANISAKIS       0.00      0.00      0.00        11
+          BACTERIA NOT IDENTIFIED       0.05      0.05      0.05        22
+          BACTERIAL FIN INFECTION       0.10      0.29      0.14         7
+           BACTERIAL GILL DISEASE       0.08      0.04      0.05       113
+                CERATOMYXA SHASTA       0.08      0.20      0.11         5
+                          CESTODE       0.00      0.00      0.00         2
+                      CHLOROMYXUM       0.00      0.00      0.00         4
+                COLDWATER DISEASE       0.23      0.33      0.27        15
+               COLUMNARIS DISEASE       0.11      0.25      0.15         4
+                       COSTIA SP.       0.13      0.10      0.11       107
+                    CRYPTOBIA SP.       0.00      0.00      0.00         9
+                   DERMOCYSTIDIUM       0.05      0.20      0.08         5
+             DIPHYLLOBOTHRIUM SP.       0.00      0.00      0.00         4
+         ENTERIC REDMOUTH DISEASE       0.23      0.43      0.30        14
+                        EPISTYLIS       0.00      0.00      0.00         6
+                  EPITHELIOCYSTIS       0.00      0.00      0.00         4
+               FLAVOBACTERIUM SP.       0.31      0.35      0.33        54
+                 FUNGAL INFECTION       0.22      0.07      0.11       138
+                FUSIFORM BACTERIA       0.10      0.16      0.12        38
+                 GYRODACTYLUS SP.       0.07      0.40      0.12        10
+                    HENNEGUYA SP.       0.00      0.00      0.00         4
+                     HEXAMITA SP.       0.17      0.56      0.26         9
+             ICHTHYOPHTHIRIUS SP.       0.00      0.00      0.00         5
+INFECTIOUS HEMATOPOIETIC NECROSIS       0.17      0.56      0.26        16
+                  INTERNAL FUNGUS       0.08      0.33      0.12         6
+                    LOMA SALMONAE       0.10      0.25      0.14         4
+                         LOMA SP.       0.08      0.50      0.13         4
+                    MICROSPORIDEA       0.06      0.11      0.08         9
+        MIXED BACTERIAL INFECTION       0.00      0.00      0.00         4
+      MOTILE AEROMONAD SEPTICEMIA       0.00      0.00      0.00        14
+                     MYXIDIUM SP.       0.00      0.00      0.00        24
+      MYXOBACTERIAL FIN INFECTION       0.00      0.00      0.00         5
+       MYXOBACTERIAL GILL DISEASE       0.12      0.13      0.12        94
+                  MYXOBACTERIOSIS       0.31      0.10      0.15       229
+                     MYXOSPORIDEA       0.00      0.00      0.00         7
+                         NEMATODE       0.00      0.00      0.00         3
+                  OTHER BACTERIAL       0.00      0.00      0.00         4
+          PARASITE NOT IDENTIFIED       0.20      0.33      0.25         3
+                    PARASITE WORM       0.00      0.00      0.00         3
+                 PARVICAPSULA SP.       0.00      0.00      0.00         3
+                        PHILONEMA       0.09      0.14      0.11         7
+                   PHOMA HERBARUM       0.00      0.00      0.00         7
+           PROLIF. KIDNEY DISEASE       0.26      0.58      0.36        38
+           PROTOZOAN UNIDENTIFIED       0.00      0.00      0.00         3
+          PSEUDOMONAS FLUORESCENS       0.00      0.00      0.00         6
+                  PSEUDOMONAS SP.       0.16      0.29      0.21        17
+       RENIBACTERIUM SALMONINARUM       0.86      0.51      0.64       345
+                   SALMINCOLA SP.       0.18      0.38      0.24         8
+                  SAPROLEGNIA SP.       0.31      0.36      0.33        14
+                 SPHAEROSPORA SP.       0.00      0.00      0.00         3
+                   TRICHODINA SP.       0.12      0.16      0.13        58
+                      TRICHOPHRYA       0.05      0.09      0.06        11
+                       VIBRIO SP.       0.06      0.17      0.09         6
+                     VIBRIOSIS VA       0.28      0.83      0.42        12
+
+                         accuracy                           0.23      1711
+                        macro avg       0.10      0.17      0.11      1711
+                     weighted avg       0.33      0.23      0.25      1711
+
+Caution: model predicts historical etiological-description labels from case context; it is not a clinical diagnostic tool and cannot establish causation.
